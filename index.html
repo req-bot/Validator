@@ -94,7 +94,13 @@
     -->
     <script>
         var oldURL = document.referrer;
-        alert(oldURL);
+        if(oldURL=='https://req-bot.github.io/got-it/'){
+            console.log("Valid Url");
+        }
+        else{
+            alert("Restricted Access");
+            window.close();
+        }
     </script>
 </body>
 
